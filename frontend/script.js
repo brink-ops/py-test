@@ -5,10 +5,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const fetchMessage = async () => {
         try {
-            // Use a relative path, or window.location.origin
-            // Since Flask is serving the HTML from the same host and port 5000,
-            // this will automatically go to http://<EC2_IP>:5000/api/message
-            const response = await fetch('/api/message'); // <<< Change this line
+            // --- CRITICAL CHANGE HERE ---
+            // Use the Kubernetes internal service name for the backend
+            // Service name: py-test-back-service
+            // Service port: 5000
+            // Backend endpoint: /api/message
+            const response = await fetch('http://py-test-back-service:5000/api/message');
+            // ---------------------------
 
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
@@ -23,5 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     fetchButton.addEventListener('click', fetchMessage);
-    fetchMessage(); // Fetch message automatically when the page loads
+
+    // Fetch message automatically when the page loads
+    fetchMessage();
 });
