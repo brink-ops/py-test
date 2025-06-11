@@ -11,3 +11,9 @@ nohup: ignoring input
 102.182.82.109 - - [11/Jun/2025 12:29:34] "[36mGET /frontend/style.css HTTP/1.1[0m" 304 -
 102.182.82.109 - - [11/Jun/2025 12:29:35] "GET /frontend/script.js HTTP/1.1" 200 -
 102.182.82.109 - - [11/Jun/2025 12:29:35] "GET /api/message HTTP/1.1" 200 -
+141.76.94.18 - - [11/Jun/2025 12:39:38] code 400, message Bad request version ('À\x13À')
+141.76.94.18 - - [11/Jun/2025 12:39:38] "[35m[1m\x16\x03\x01\x00â\x01\x00\x00Þ\x03\x03í\x1a;\x88i8\x00Kp(w$íá,(\x19¶\x9e²\x8dgNËv½ÿeÜ\x0c¸\x1c ÞÈ\x90Õõ_Y\x8fìFxrfBr\x9f\x83Å Y\x06¼6Y\x89±ì(\x7fRNw\x00\x1aÀ+À/À,À0Ì©Ì¨À\x09À\x13À[0m" HTTPStatus.BAD_REQUEST -
+141.76.94.18 - - [11/Jun/2025 12:39:39] code 400, message Bad request version ('À\x13À')
+141.76.94.18 - - [11/Jun/2025 12:39:39] "[35m[1m\x16\x03\x01\x00â\x01\x00\x00Þ\x03\x03Q\x7fÙL1!\x92"¨ó\x1f\x11\x11pD\x01ª\x04ETµâ\x9fÙV\x92\x15\x11e¥å\x14 6\x82\x933µÄ/©B\x99Z\x88\x8c³°a\x0d5I¶Üý_¶Sbí\x98Pëg\x9f\x00\x1aÀ+À/À,À0Ì©Ì¨À\x09À\x13À[0m" HTTPStatus.BAD_REQUEST -
+141.76.94.18 - - [11/Jun/2025 12:39:39] "[33mGET http://141.76.94.18:80/pscan HTTP/1.1[0m" 404 -
+141.76.94.18 - - [11/Jun/2025 12:39:41] "[33mCONNECT p-scanner.research.netd.cs.tu-dresden.de:443 HTTP/1.1[0m" 404 -
