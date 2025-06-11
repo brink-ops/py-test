@@ -6,11 +6,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const fetchMessage = async () => {
         try {
             // --- CRITICAL CHANGE HERE ---
-            // Use the Kubernetes internal service name for the backend
-            // Service name: py-test-back-service
-            // Service port: 5000
-            // Backend endpoint: /api/message
-            const response = await fetch('http://py-test-back-service:5000/api/message');
+            // Now call a relative path on the frontend server, which Nginx will proxy
+            const response = await fetch('/api/message');
             // ---------------------------
 
             if (!response.ok) {
